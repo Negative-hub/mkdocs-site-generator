@@ -1,6 +1,6 @@
 ---
 title: Главная
-template: home.html
+template: main.html
 ---
 
 <div class="homepage-hero">
