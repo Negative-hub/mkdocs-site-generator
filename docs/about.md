@@ -1,5 +1,6 @@
 ---
 title: О проекте
+template: main.html
 ---
 
 ## О проекте

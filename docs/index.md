@@ -6,7 +6,7 @@ template: main.html
 <div class="homepage-hero">
   <h1>Добро пожаловать на мой сайт!</h1>
   <p>Это демонстрация кастомной темы для MkDocs с использованием Jinja2 шаблонов, кастомных стилей и развертыванием через GitHub Actions.</p>
-  <a href="{{ 'about.md'|url }}" class="cta-button">Узнать больше</a>
+  <a href="about" class="cta-button">Узнать больше</a>
 </div>
 
 <div class="features-grid">
