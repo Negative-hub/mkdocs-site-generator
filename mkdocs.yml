@@ -1,0 +1,6 @@
+site_name: MkDocs SSG
+site_url: https://Negative-hub.github.io/mkdocs-site-generator/
+site_dir: ./site
+nav:
+  - Home: index.md
+  - About: about.md
