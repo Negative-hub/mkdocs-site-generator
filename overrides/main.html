@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  <title>{{ page.title }} - {{ config.site_name }}</title>
+  <!-- Метаданные -->
+  <meta name="description" content="{{ config.site_description }}">
+  <meta name="author" content="{{ config.site_author }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+{% endblock %}
+
+{% block content %}
+  <!-- Кастомный header -->
+  {% include "partials/header.html" %}
+  
+  <!-- Основной контент -->
+  <div class="custom-container">
+    {{ super() }}
+  </div>
+  
+  <!-- Кастомный footer -->
+  {% include "partials/footer.html" %}
+{% endblock %}

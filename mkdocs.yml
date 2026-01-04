@@ -1,6 +1,37 @@
-site_name: MkDocs SSG
+site_name: mkdocs SSG
+site_description: Демонстрация кастомной темы MkDocs с Jinja2
+site_author: Andrew Titov
 site_url: https://negative-hub.github.io/mkdocs-site-generator/
-site_dir: ./site
+
+# Используем кастомную тему
+theme:
+  name: mkdocs
+  custom_dir: overrides/
+  static_templates:
+    - 404.html
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+
+# Дополнительные CSS
+extra_css:
+  - styles/custom.css
+
+# Плагины
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Навигация
 nav:
-  - Home: index.md
-  - About: about.md
+  - Главная: index.md
+  - О проекте: about.md
+
+# Кастомные переменные
+extra:
+  copyright: "© 2026 mkdocs SSG. Все права защищены."
+  custom_header_text: "Добро пожаловать!"

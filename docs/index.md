@@ -1,15 +1,47 @@
-# Welcome to MkDocs
+---
+title: Главная
+template: home.html
+---
 
-## Commands
+<div class="homepage-hero">
+  <h1>Добро пожаловать на мой сайт!</h1>
+  <p>Это демонстрация кастомной темы для MkDocs с использованием Jinja2 шаблонов, кастомных стилей и развертыванием через GitHub Actions.</p>
+  <a href="{{ 'about.md'|url }}" class="cta-button">Узнать больше</a>
+</div>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<div class="features-grid">
+  <div class="feature-card">
+    <div class="feature-icon">🚀</div>
+    <h2>Быстрая разработка</h2>
+    <p>Используйте MkDocs для быстрого создания документации и сайтов с поддержкой Markdown.</p>
+  </div>
+  
+  <div class="feature-card">
+    <div class="feature-icon">🎨</div>
+    <h2>Кастомный дизайн</h2>
+    <p>Создавайте уникальные темы с помощью Jinja2 шаблонов и CSS.</p>
+  </div>
+  
+  <div class="feature-card">
+    <div class="feature-icon">⚙️</div>
+    <h2>CI/CD с GitHub Actions</h2>
+    <p>Автоматическое развертывание на GitHub Pages при каждом изменении кода.</p>
+  </div>
+</div>
 
-## Project layout
+## О проекте
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Этот сайт демонстрирует возможности:
+
+- **Кастомной темы MkDocs** с использованием Jinja2
+- **Кастомных шаблонов** для header, footer и контента
+- **Адаптивного дизайна** с современными CSS-эффектами
+- **Метаданных** для SEO оптимизации
+- **Автоматического деплоя** через GitHub Actions
+
+### Технологии:
+- Python
+- MkDocs
+- Jinja2
+- GitHub Actions
+- GitHub Pages

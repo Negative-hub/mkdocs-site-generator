@@ -1,0 +1,29 @@
+<header class="custom-header">
+  <div class="header-container">
+    <!-- Кастомный текст в header -->
+    <div class="header-text">
+      <h2>{{ config.extra.custom_header_text }}</h2>
+    </div>
+    
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <ul>
+        {% for nav_item in nav %}
+          <li class="{% if nav_item.active %}active{% endif %}">
+            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    
+    <!-- Поиск -->
+    {% if 'search' in config['plugins'] %}
+      <div class="search-box">
+        <form action="{{ 'search.html'|url }}" method="get">
+          <input type="text" name="q" placeholder="Поиск..." aria-label="Поиск">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+    {% endif %}
+  </div>
+</header>
